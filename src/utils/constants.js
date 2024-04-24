@@ -38,7 +38,7 @@ export const keys = Object.keys(pages)
 //Urls
 
 export const Urls = [
-    "/assets/imagenes/preguntasfrecuentes.png",
+    "/assets/imagenes/preguntasfrecuentes.pdf",
     "/assets/pdfs/PreciadorWM.pdf",
     "/assets/pdfs/TripticoWalmart2023Salida.pdf",
     "/assets/videos/VideoGarantiaGeneral.mp4"
