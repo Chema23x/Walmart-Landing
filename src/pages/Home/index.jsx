@@ -23,7 +23,7 @@ const LoginPage = () => {
                     textClassname="text-end md:text-center w-10/12 text-xs md:text-2xl mr-5"
                     bgImage={""} 
                 />
-                    <div className="flex justify-center items-center w-full h-3/6 md:hidden">
+                <div className="flex justify-center items-center w-full h-3/6 md:hidden">
 
                 <div className="grid grid-cols-2 w-10/12 h-full gap-2">
                     {components.map(component =>  (
