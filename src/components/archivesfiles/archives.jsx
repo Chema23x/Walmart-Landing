@@ -1,11 +1,15 @@
 import Link from 'next/link'
 
-const Archives = ({ icon, pdfAlt, archivetitle, onClick, downloadArchive }) => {
+const Archives = ({ icon, pdfAlt, archivetitle, onClick, downloadArchive, children }) => {
     return (
         <div className="flex justify-between h-10 md:h-16 w-11/12 border-b-2 mt-2">
             <div className="flex items-center w-3/4 h-5/6 gap-3 md:gap-10">
                 <div className="flex w-[30px] md:w-[45px] h-5/6 justify-center items-center rounded-full" style={{ backgroundColor: "#004B8D" }}>
+                    {icon !== "" ?
                     <img className="w-1/2 h-1/2" src={icon} alt={pdfAlt} />
+                    :
+                    children
+                    }
                 </div>
                 <div className="flex w-10/12 text-xs md:text-lg">
                     {archivetitle}

@@ -1,19 +1,20 @@
 // Pdfs
 export const pdfs = [
     "Preciador WM",
-    "Tríptico Walmart 2023 Salida",  
+    "Bitácora Ventas",  
 ]
 
 //Images
 
 export const imgs = [
-    "Preguntas Frecuentes",
+    "Preguntas frecuentes",
+    "Proceso de pago"
 ]
 
 
 //Comics
-export const comics = [
-
+export const contract = [
+    "TripticoWalmart2023Salida"
 ]
 
 //Videos
@@ -21,27 +22,48 @@ export const videos = [
     "Video Garantía General"
 ]
 
+//Tops
+export const tops = [
+    "RECONOCIMIENTOS HTS importe",
+    "RECONOCIMIENTOS HTS conv",
+    "RECONOCIMIENTOS HTS contratos",
+    "RECONOCIMIENTOS HTS dtto"
+]
+
+
 //Pages
 
 export const pages = {
-    Documentos: "/documentsPage",
-    Imagenes: "/imagesPage",
-    Historietas: "/comicsPage",
-    Videos: "/videosPage"
+    Herramientas_de_trabajo: "/documentsPage",
+    Preguntas_frecuentes: "/imagesPage",
+    Contrato: "/comicsPage",
+    Videos: "/videosPage",
+    Reconocimientos_HTS_2024: "/TopPage"
 };
+
+// Función para formatear las claves
+function formatPageName(name) {
+    return name.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
+}
 
 //Keys
 
-export const keys = Object.keys(pages)
+export const keys = Object.keys(pages).map(key => formatPageName(key));
 
 
 //Urls
 
 export const Urls = [
     "/assets/imagenes/preguntasfrecuentes.pdf",
+    "/assets/imagenes/Proceso de pago.pdf",
     "/assets/pdfs/PreciadorWM.pdf",
-    "/assets/pdfs/TripticoWalmart2023Salida.pdf",
-    "/assets/videos/VideoGarantiaGeneral.mp4"
+    "/assets/pdfs/Bitácora Ventas.pdf",
+    "/assets/contrato/TripticoWalmart2023Salida.pdf",
+    "/assets/videos/VideoGarantiaGeneral.mp4",
+    "/assets/tops/RECONOCIMIENTOS HTS importe.pdf",
+    "/assets/tops/RECONOCIMIENTOS HTS conv.pdf",
+    "/assets/tops/RECONOCIMIENTOS HTS contratos.pdf",
+    "/assets/tops/RECONOCIMIENTOS HTS dtto.pdf",
 ]
 
 //Function
@@ -59,5 +81,6 @@ export const components = [
     {icon: "assets/icons/pdfIcon.png", altIcon: "icono pdf", iconText:"Documentos",linkTo: "/DocumentsPage"},
     {icon: "assets/icons/imageIcon.png",altIcon:"icono imagen", iconText:"Imagenes",linkTo:"/ImagesPage"},
     {icon: "assets/icons/videosIcon.png",altIcon:"icono video",iconText:"Videos",linkTo:"/VideosPage"},
-    {icon: "assets/icons/bookIcon.png",altIcon:"icono book", iconText:"Historietas",linkTo:"/ComicsPage"}
+    {icon: "assets/icons/bookIcon.png",altIcon:"icono book", iconText:"Historietas",linkTo:"/ComicsPage"},
+    {icon: "",altIcon:"", iconText:"Reconocimientos HTS 2024",linkTo:"/TopPage"}
 ]

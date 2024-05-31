@@ -2,7 +2,7 @@ import FrameFullWidth from "@/components/frameFullWidth/frameFullWith";
 import Arrow from "@/components/arrow/arrow";
 import Archives from "@/components/archivesfiles/archives";
 import BasicBreadcrumbs from "@/components/breadcrumb/breadcrumb";
-import { comics } from "@/utils/constants";
+import { contract } from "@/utils/constants";
 import { keys } from "@/utils/constants";
 import { useState } from "react";
 import ContentPage from "../ContentPage/ContentPage";
@@ -10,22 +10,22 @@ import { findUrl } from "@/utils/functions";
 
 const ComicsPage = () =>{
 
-    const [selectedComic, setSelectedComic] = useState(null);
+    const [selectedContract, setSelectedContract] = useState(null);
     const [file, setFile] = useState(keys[2])
     
     const handlePdfClick = (archiveTitle) => {
-        setSelectedComic(archiveTitle);
+        setSelectedContract(archiveTitle);
     };
 
     return (
     <> 
-        <section className={`${selectedComic === null ? "h-screen w-screen relative" : "hidden"}`}>
+        <section className={`${selectedContract === null ? "h-screen w-full relative" : "hidden"}`}>
             <div className="flex w-full items-center my-5">
                 <Arrow
-                    currentPage={"Historietas"}
+                    currentPage={"Contrato"}
                 />
                 <BasicBreadcrumbs
-                        previousPage={"Historietas"}
+                        previousPage={"Contrato"}
                         page={""}
                 />
             </div>
@@ -39,7 +39,7 @@ const ComicsPage = () =>{
                  bgImage={"assets/bgImages/bgline.png"}
                 />
             <div className="flex flex-col w-11/12 items-center mt-5">
-                {comics.map(archiveTitle => (
+                {contract.map(archiveTitle => (
                     <Archives 
                         key={archiveTitle}
                         icon={"assets/icons/bookIcon.png"}
@@ -52,7 +52,7 @@ const ComicsPage = () =>{
             </div>    
             </div>
         </section>
-        {selectedComic && <ContentPage archiveTitle={selectedComic} section={file}  hide={() => handlePdfClick(null)}/>}
+        {selectedContract && <ContentPage archiveTitle={selectedContract} section={file}  hide={() => handlePdfClick(null)}/>}
     </>
     )
 }
