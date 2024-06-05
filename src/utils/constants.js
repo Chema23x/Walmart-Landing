@@ -78,9 +78,9 @@ export const Urls = [
 // Generar OptionsFrames
 
 export const components = [
-    {icon: "assets/icons/pdfIcon.png", altIcon: "icono pdf", iconText:"Documentos",linkTo: "/DocumentsPage"},
-    {icon: "assets/icons/imageIcon.png",altIcon:"icono imagen", iconText:"Imagenes",linkTo:"/ImagesPage"},
-    {icon: "assets/icons/videosIcon.png",altIcon:"icono video",iconText:"Videos",linkTo:"/VideosPage"},
-    {icon: "assets/icons/bookIcon.png",altIcon:"icono book", iconText:"Historietas",linkTo:"/ComicsPage"},
+    {icon: "assets/icons/pdfIcon.png", altIcon: "icono pdf", iconText:"Herramientas de trabajo",linkTo: "/Herramientas_de_trabajo"},
+    {icon: "assets/icons/imageIcon.png",altIcon:"icono imagen", iconText:"Preguntas frecuentes",linkTo:"/Preguntas_frecuentes"},
+    {icon: "assets/icons/videosIcon.png",altIcon:"icono video",iconText:"Videos",linkTo:"/Videos"},
+    {icon: "assets/icons/bookIcon.png",altIcon:"icono book", iconText:"Contrato",linkTo:"/Contrato"},
     {icon: "",altIcon:"", iconText:"Reconocimientos HTS 2024",linkTo:"/TopPage"}
 ]
