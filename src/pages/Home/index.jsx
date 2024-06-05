@@ -3,16 +3,16 @@
 import FrameFullWidth from "@/components/frameFullWidth/frameFullWith";
 import OptionFrame from "@/components/optionFrame/optionFrame";
 import { components } from "@/utils/constants";
-
+import Image from "next/image";
+import walmartLogo from "../../assets/img/walmart-logo.png"
 const LoginPage = () => {
 
 
     return(
      <>   
-    
         <section className="h-screen w-full flex flex-col md:gap-4">
             <header className="flex justify-center items-center w-full h-[90px] md:h-1/6 lg:mt-2">
-                <img className="w-6/12 lg:w-[250px]" src="assets/bgImages/Walmart Logo.png" alt="Walmart Logo" />
+                <Image src={walmartLogo}/>
             </header>
             <div className="flex flex-col items-center justify-start h-full w-full gap-4 md:gap-7">
                 <FrameFullWidth 
@@ -43,7 +43,7 @@ const LoginPage = () => {
                                 icon={"assets/icons/pdfIcon.png"} 
                                 altIcon={"icono pdf"}
                                 iconText={"Herramientas de trabajo"}
-                                linkTo={"/DocumentsPage"}
+                                linkTo={"/Herramientas_de_trabajo"}
                                 iconClassName={"h-[90px] absolute top-[20%] left-[38%]"}
                         />
                     </div>
@@ -52,7 +52,7 @@ const LoginPage = () => {
                                 icon={""} 
                                 altIcon={"icono imagen"} 
                                 iconText={"Preguntas frecuentes"}
-                                linkTo={"/ImagesPage"}
+                                linkTo={"/Preguntas_frecuentes"}
                                 iconClassName={"h-2/6 absolute top-[20%] right-[10%]"}
                             >
                                 <svg stroke="white" strokeWidth={20} fill="none" className='absolute top-5 right-8 border-2 p-2 rounded-full w-[60px] h-[60px]' width={40} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -63,14 +63,14 @@ const LoginPage = () => {
                                 icon={"assets/icons/videosIcon.png"} 
                                 altIcon={"icono video"} 
                                 iconText={"Videos"}
-                                linkTo={"/VideosPage"}
+                                linkTo={"/Videos"}
                                 iconClassName={"h-2/6 absolute top-[20%] right-[10%]"}
                             />
                             <OptionFrame 
                                 icon={"assets/icons/bookIcon.png"} 
                                 altIcon={"icono book"}
                                 iconText={"Contrato"}
-                                linkTo={"/ComicsPage"}
+                                linkTo={"/Contrato"}
                                 iconClassName={"h-3/6 absolute top-[25%] right-[5%]"}
                             />
                             <OptionFrame 

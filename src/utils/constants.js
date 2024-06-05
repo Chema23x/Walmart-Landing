@@ -1,14 +1,14 @@
 // Pdfs
 export const pdfs = [
     "Preciador WM",
-    "Bitácora Ventas",  
+    "Bitácora Ventas",
+    "Call Center"  
 ]
 
 //Images
 
 export const imgs = [
-    "Preguntas frecuentes",
-    "Proceso de pago"
+    "Preguntas frecuentes"
 ]
 
 
@@ -19,7 +19,7 @@ export const contract = [
 
 //Videos
 export const videos = [
-    "Video Garantía General"
+    "Video Corporativo"
 ]
 
 //Tops
@@ -55,11 +55,11 @@ export const keys = Object.keys(pages).map(key => formatPageName(key));
 
 export const Urls = [
     "/assets/imagenes/preguntasfrecuentes.pdf",
-    "/assets/imagenes/Proceso de pago.pdf",
     "/assets/pdfs/PreciadorWM.pdf",
     "/assets/pdfs/Bitácora Ventas.pdf",
+    "/assets/pdfs/Callcenter.pdf",
     "/assets/contrato/TripticoWalmart2023Salida.pdf",
-    "/assets/videos/VideoGarantiaGeneral.mp4",
+    "/assets/videos/VideoCorporativo.mp4",
     "/assets/tops/RECONOCIMIENTOS HTS importe.pdf",
     "/assets/tops/RECONOCIMIENTOS HTS conv.pdf",
     "/assets/tops/RECONOCIMIENTOS HTS contratos.pdf",

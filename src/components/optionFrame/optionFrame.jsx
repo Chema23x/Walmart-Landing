@@ -10,7 +10,7 @@ const OptionFrame = ({ icon, altIcon, iconText, linkTo, iconClassName, children 
                 :
                 children
                 }
-                <h1 className="absolute bottom-1 left-1 md:left-2 text-white md:text-xl">{iconText}</h1>
+                <h1 className="absolute bottom-1 left-1 md:left-2 text-white md:text-base">{iconText}</h1>
             </Link>
         </div>
     );

@@ -6,6 +6,7 @@ import { pdfs } from "@/utils/constants";
 import { keys } from "@/utils/constants";
 import { useState } from "react";
 import ContentPage from "../ContentPage/ContentPage";
+import hero from "../../assets/gifs/sudadera_walmart.gif"
 import { findUrl } from "@/utils/functions";
 
 const DocumentsPage = () =>{
@@ -35,11 +36,11 @@ const DocumentsPage = () =>{
 
             <div className="flex flex-col items-center h-5/6 w-full gap-4">
                 <FrameFullWidth 
-                 textFrameFull={"Consulta nuestra información en los archivos adjuntos"}
-                 imageSource={"assets/hoodies/hoodieAssetsPages.png"}
-                 imageAlt={"hoodie page 2"}
-                 textClassname="text-end w-full text-xs md:text-2xl lg:text-3xl md:text-center absolute top-10 md:top-7 right-6"
-                 bgImage={"assets/bgImages/bgline.png"}
+                 titleFrameFull={"¡Sorprendete!"}
+                 textFrameFull={"PDF, imagenes, videos e historietas"}
+                 imageSource={hero}
+                 imageAlt={"hero page 2"}
+                 textClassname="text-center text-xs md:text-2xl mt-3 lg:text-3xl "
                 />
              <div className="hidden md:flex md:flex-col md:w-11/12 md:items-center md:mt-5">
                 {pdfs.map(archiveTitle => (
