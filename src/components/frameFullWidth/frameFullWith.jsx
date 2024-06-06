@@ -3,8 +3,8 @@ const FrameFullWidth = ({titleFrameFull, textFrameFull,textClassname,  imageSour
     return(
         <section className="flex w-10/12 md:w-10/12 h-[190px] md:h-2/6 rounded-md relative" style={{backgroundColor: "#004B8D"}}>
         {imageSource !== "" &&    
-        <div className="flex justify-center w-5/12 lg:w-5/12 relative">
-            <Image className="w-[8rem] h-[14rem] absolute left-0 -translate-y-3" src={imageSource} alt={imageAlt} />
+        <div className="flex justify-start w-5/12">
+          <Image className="w-[8rem] h-[13rem] md:h-[220px] lg:h-[220px] xl:h-[14rem] -translate-y-3 lg:-translate-y-8 xl:-translate-y-1 2xl:-translate-y-3 " src={imageSource} alt={imageAlt} />
          </div>
          }
          <div className="flex flex-col items-center justify-center md:justify-center w-full h-5/6 text-white relative">

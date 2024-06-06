@@ -14,7 +14,7 @@ export const imgs = [
 
 //Comics
 export const contract = [
-    "TripticoWalmart2023Salida"
+    "Triptico Walmart 2023 Salida"
 ]
 
 //Videos
@@ -24,21 +24,18 @@ export const videos = [
 
 //Tops
 export const tops = [
-    "RECONOCIMIENTOS HTS importe",
-    "RECONOCIMIENTOS HTS conv",
-    "RECONOCIMIENTOS HTS contratos",
-    "RECONOCIMIENTOS HTS dtto"
+    "Contacto"
 ]
 
 
 //Pages
 
 export const pages = {
-    Herramientas_de_trabajo: "/documentsPage",
-    Preguntas_frecuentes: "/imagesPage",
-    Contrato: "/comicsPage",
-    Videos: "/videosPage",
-    Reconocimientos_HTS_2024: "/TopPage"
+    Herramientas_de_trabajo: "/Herramientas_de_trabajo",
+    Preguntas_frecuentes: "/Preguntas_frecuentes",
+    Contrato: "/Contrato",
+    Videos: "/Videos",
+    Reconocimientos_HTS_2024: "/Datos_de_contacto"
 };
 
 // Función para formatear las claves
@@ -60,10 +57,7 @@ export const Urls = [
     "/assets/pdfs/Callcenter.pdf",
     "/assets/contrato/TripticoWalmart2023Salida.pdf",
     "/assets/videos/VideoCorporativo.mp4",
-    "/assets/tops/RECONOCIMIENTOS HTS importe.pdf",
-    "/assets/tops/RECONOCIMIENTOS HTS conv.pdf",
-    "/assets/tops/RECONOCIMIENTOS HTS contratos.pdf",
-    "/assets/tops/RECONOCIMIENTOS HTS dtto.pdf",
+    "/assets/tops/Contacto.pdf",
 ]
 
 //Function
@@ -82,5 +76,5 @@ export const components = [
     {icon: "assets/icons/imageIcon.png",altIcon:"icono imagen", iconText:"Preguntas frecuentes",linkTo:"/Preguntas_frecuentes"},
     {icon: "assets/icons/videosIcon.png",altIcon:"icono video",iconText:"Videos",linkTo:"/Videos"},
     {icon: "assets/icons/bookIcon.png",altIcon:"icono book", iconText:"Contrato",linkTo:"/Contrato"},
-    {icon: "",altIcon:"", iconText:"Reconocimientos HTS 2024",linkTo:"/TopPage"}
+    {icon: "",altIcon:"", iconText:"Reconocimientos HTS 2024",linkTo:"/Datos_de_contacto"}
 ]
